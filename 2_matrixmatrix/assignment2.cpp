@@ -32,7 +32,7 @@ int main() {
     auto end = std::chrono::high_resolution_clock::now();
     auto naive_time = std::chrono::duration<double, std::milli>(end - start).count();
     
-    std::cout << "Naive matmul: " << naive_time << " ms\n";
+    std::cout << "time " << naive_time << " ms\n";
     std::cout << "C[0][0] = " << C[0] << ", C[255][255] = " << C[N*N-1] << "\n";
 
     return 0;
